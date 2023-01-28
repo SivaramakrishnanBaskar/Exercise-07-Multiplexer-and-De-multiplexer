@@ -20,17 +20,25 @@ The multiplexer is a device that has multiple inputs and single line output. The
 
 The single-pole multi-position switch is a simple example of a non-electronic circuit of the multiplexer, and it is widely used in many electronic circuits. The multiplexer is used to perform high-speed switching and is constructed by electronic components.
 
+![Screenshot (125)](https://user-images.githubusercontent.com/119476322/215268611-b8fece31-3990-4d98-8c49-68e9728d6f52.png)
+
 Multiplexers are capable of handling both analog and digital applications. In analog applications, multiplexers are made up of relays and transistor switches, whereas in digital applications, the multiplexers are built from standard logic gates. When the multiplexer is used for digital applications, it is called a digital multiplexer.
 
 4-to-1 Multiplexer The 4X1 multiplexer comprises 4-input bits, 1- output bit, and 2- control bits. The four input bits are namely 0, D1, D2, and D3, respectively; only one of the input bits is transmitted to the output. The o/p ‘q’ depends on the value of control input AB. The control bit AB decides which of the i/p data bit should transmit the output. The following figure shows the 4X1 multiplexer circuit diagram using AND gates. For example, when the control bits AB =00, then the higher AND gates are allowed while remaining AND gates are restricted. Thus, data input D0 is transmitted to the output ‘q” image
 
+![Screenshot (126)](https://user-images.githubusercontent.com/119476322/215268629-eea4bad3-4178-4166-9ec1-3103249d954b.png)
 
-Figure2 4X1 multiplexer If the control input is changed to 11, then all gates are restricted except the bottom AND gate. In this case, D3 is transmitted to the output, and q=D0. If the control input is changed to AB =11, all gates are disabled except the bottom AND gate. In this case, D3 is transmitted to the output, and q = D3. The best example of a 4X1 multiplexer is IC 74153. In this IC, the o/p is the same as the i/p. Another example of a 4X1 multiplexer is IC 45352. In this IC, the o/p is the compliment of the i/p
+4X1 multiplexer If the control input is changed to 11, then all gates are restricted except the bottom AND gate. In this case, D3 is transmitted to the output, and q=D0. If the control input is changed to AB =11, all gates are disabled except the bottom AND gate. In this case, D3 is transmitted to the output, and q = D3. The best example of a 4X1 multiplexer is IC 74153. In this IC, the o/p is the same as the i/p. Another example of a 4X1 multiplexer is IC 45352. In this IC, the o/p is the compliment of the i/p
 
 # What is Demultiplexer?
 
-De-multiplexer is also a device with one input and multiple output lines. It is used to send a signal to one of the many devices. The main difference between a multiplexer and a de-multiplexer is that a multiplexer takes two or more signals and encodes them on a wire, whereas a de-multiplexer does reverse to what the multiplexer does. image Figure 3 De-multiplexer 1-4 Demultiplexer The 1-to-4 demultiplexer comprises 1- input bit, 4-output bits, and control bits. The 1X4 demultiplexer circuit diagram is shown below.image
+De-multiplexer is also a device with one input and multiple output lines. It is used to send a signal to one of the many devices. The main difference between a multiplexer and a de-multiplexer is that a multiplexer takes two or more signals and encodes them on a wire, whereas a de-multiplexer does reverse to what the multiplexer does.
 
+![Screenshot (127)](https://user-images.githubusercontent.com/119476322/215268668-22cb1c2a-9d90-4953-9be6-525fbd58233e.png)
+
+De-multiplexer 1-4 Demultiplexer The 1-to-4 demultiplexer comprises 1- input bit, 4-output bits, and control bits. The 1X4 demultiplexer circuit diagram is shown below.
+
+![Screenshot (128)](https://user-images.githubusercontent.com/119476322/215268707-979adce4-378c-4a04-8624-d88f922ba8a4.png)
 
 Figure4 1X4 De-multiplexer The i/p bit is considered as Data D. This data bit is transmitted to the data bit of the o/p lines, which depends on the AB value and the control i/p.
 
@@ -41,6 +49,7 @@ If the data bit D is low, the output Y1 is low. IF data bit D is high, the outpu
 If the control input changes to AB = 10, then all the gates are restricted except the third AND gate from the top. Then, data bit D is transmitted only to the output Y2; and, Y2 = Data. . The best example of 1X4 demultiplexer is IC 74155.
 
 # Procedure
+
 # 1.Using OR Gate and wires construct 4:1 Multiplexer
 # 2.Repeat the same steps to construct 1:4 Demultiplexer
 # 3.Find RTL Logic and Timing diagram for both Multiplexer and Demultiplexer
@@ -83,28 +92,36 @@ endmodule
 ```
 
 # OUTPUT
+
 # RTL LOGIC
+
 # Multiplexer
 
-images
+![Screenshot (130)](https://user-images.githubusercontent.com/119476322/215268838-d1eebafc-2df8-457b-966a-f69f65ef0e43.png)
+
 # Demultiplexer
 
-images
+![Screenshot (131)](https://user-images.githubusercontent.com/119476322/215268861-22dad8e4-28a6-421e-9146-602b115bcec5.png)
+
 # TIMING DIGRAMS
 
 # Multiplexer
 
-images
+![Screenshot (132)](https://user-images.githubusercontent.com/119476322/215268889-5f25a127-0418-4865-a7a1-de80a7dd4cce.png)
+
 # Demultiplexer
 
-images
+![Screenshot (133)](https://user-images.githubusercontent.com/119476322/215268901-541304d1-45a9-4cd5-b35e-12ec877a764b.png)
+
 # TRUTH TABLE
 
 # Multiplexer
 
-images
+![Screenshot (134)](https://user-images.githubusercontent.com/119476322/215268911-7e82bc92-59a9-404b-a810-713b4560c1b0.png)
+
 # Demultiplexer
 
-images
+![Screenshot (135)](https://user-images.githubusercontent.com/119476322/215268920-4f22ba03-65ad-4368-8d2e-fe89351a27e7.png)
+
 # RESULTS
 Thus the Multiplexer and Demultiplexer circuits are designed and the truth table is verified using quartus software
